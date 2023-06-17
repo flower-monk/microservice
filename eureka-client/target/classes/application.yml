@@ -1,0 +1,14 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8889/eureka/
+    instance:
+      lease-expiration-duration-in-seconds: 30
+      lease-renewal-interval-in-seconds: 10
+    registry-fetch-interval-seconds: 5
+server:
+  port: 9003
+spring:
+  application:
+    name: client
