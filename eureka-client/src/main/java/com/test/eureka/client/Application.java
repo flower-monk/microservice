@@ -15,7 +15,7 @@ public class Application {
     @Value("${server.port}")
     String port;
 
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String home() {
         return "欢迎光临，服务端口号为：" + port;
     }
